@@ -8,6 +8,6 @@
         <input type="checkbox" name="fav_mod" value="COMP1101">Programming (Black)<br>     
         <input type="checkbox" name="fav_mod" value="COMP1111">Programming (Gold)<br>          
         <br>      
-        <input type="submit" value="Submit now" />      
+        <input type="submit" value="Submit now" name="submit />      
     </fieldset>      
 </form>
