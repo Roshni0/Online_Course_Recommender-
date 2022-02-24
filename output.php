@@ -1,6 +1,15 @@
 <?php
 
 include_once 'config.php';
-$age = ($_POST['fav_mod']);
-print($age);
+if(isset($_POST['submit'])){
+
+    if(!empty($_POST['fav_mod'])) {
+
+        foreach($_POST['fav_mod'] as $value){
+            echo "value : ".$value.'<br/>';
+        }
+
+    }
+
+}
 ?>
