@@ -1,4 +1,5 @@
 <?php
+
 include_once 'config.php';
 $name = $_POST['usernameLogin'];
 
@@ -9,6 +10,8 @@ if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
     echo "id: " . $row["userId"]. " - Age: " . $row["age"]. " Gender " . $row["gender"]. "<br>";
+    session_start();
+    $_SESSION['userId'] = $row["userId"];
     header("Location: http://localhost/xai/welcome.php");
     exit();
   }
