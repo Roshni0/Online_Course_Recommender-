@@ -23,6 +23,8 @@ if (mysqli_num_rows($result) > 0) {
           echo "id: " . $row["userId"]. " - Age: " . $row["age"]. " Gender " . $row["gender"]. "<br>";
           session_start();
           $_SESSION['userId'] = $row["userId"];
+          $_SESSION['age'] = $row["age"];
+          $_SESSION['gender'] = $row["gender"];
     echo "New record has been added successfully !";
     header("Location: http://localhost/xai/welcome.php");
     exit();
