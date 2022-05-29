@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION['subject']="p";
+?>
+
 <head>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">// import jquery</script>
 <script type="text/javascript">
@@ -24,7 +29,6 @@
         };
         var random = shuffle(numbers);
         console.log(random);
-
         for(var i = 0; i<random.length-1; i++){
             var target = random[i];
             var target2 = random[i+1];
@@ -52,4 +56,3 @@
         document.getElementById("txtHint").innerHTML = "";
     }
 </script>
- 
