@@ -3,10 +3,6 @@
 
 ?>
 
-<form action="similaruserrec.php" method="post">
-Similar users got
-<input type='submit' name='submit' value='yes'  />
-</form>
 
 <form action="userrec.php" method="post">
 your profile
