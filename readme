@@ -1,0 +1,11 @@
+For sentence_transformer:
+
+How does it work?
+- Line 11 in itemrec.php calls transformer.py using shell command
+- exec(command,$out,$ret) command behaves as "python3 transformer.py $chosen_test"
+
+Issues needs to be aware
+- 1. the command path may be various on machines
+- 2. php exec authority is limited
+- 3. to solve issue 2, sentence_transformer folder in python lib should be set as for everyone
+- folder name: sentence_transformers/sentence_transformers_all-MiniLM-L6-v2
