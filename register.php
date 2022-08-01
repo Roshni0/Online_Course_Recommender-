@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!-- Login/Signup Form-->
 <div class="row">
     <div class="col">
